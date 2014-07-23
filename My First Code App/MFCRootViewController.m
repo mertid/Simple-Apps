@@ -125,9 +125,9 @@
     
     phoneView.placeholder = @"phone";
     
-    UIView *paddingView3 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    UIView * paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
     
-    phoneView.leftView = paddingView3;
+    phoneView.leftView = paddingView;
     
     phoneView.leftViewMode = UITextFieldViewModeAlways;
     
@@ -140,9 +140,9 @@
     emailField.backgroundColor = [UIColor whiteColor];
     emailField.placeholder = @"email";
     
-    UIView *paddingView4 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
     
-    emailField.leftView = paddingView4;
+    emailField.leftView = paddingView;
     
     emailField.leftViewMode = UITextFieldViewModeAlways;
     
@@ -164,7 +164,7 @@
     
     
     
-    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
     
     passwordField.leftView = paddingView;
     
@@ -178,9 +178,9 @@
     
     usernameField.textColor = [UIColor colorWithRed:0.086f green:0.549f blue:0.729f alpha:1.0f];
     
-    UIView *paddingView2 = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
+    paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 20)];
     
-    usernameField.leftView = paddingView2;
+    usernameField.leftView = paddingView;
     
     usernameField.leftViewMode = UITextFieldViewModeAlways;
 
