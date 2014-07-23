@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F151C215196DE27700548316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F151C214196DE27700548316 /* Foundation.framework */; };
+		F151C218196DE27700548316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F151C217196DE27700548316 /* main.m */; };
+		F151C21C196DE27700548316 /* HelloObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F151C21B196DE27700548316 /* HelloObjectiveC.1 */; };
+		F151C224196E02FA00548316 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = F151C223196E02FA00548316 /* Car.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F151C20F196DE27700548316 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				F151C21C196DE27700548316 /* HelloObjectiveC.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F151C211196DE27700548316 /* HelloObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
+		F151C214196DE27700548316 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F151C217196DE27700548316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F151C21A196DE27700548316 /* HelloObjectiveC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloObjectiveC-Prefix.pch"; sourceTree = "<group>"; };
+		F151C21B196DE27700548316 /* HelloObjectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HelloObjectiveC.1; sourceTree = "<group>"; };
+		F151C222196E02FA00548316 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		F151C223196E02FA00548316 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F151C20E196DE27700548316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F151C215196DE27700548316 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F151C208196DE27700548316 = {
+			isa = PBXGroup;
+			children = (
+				F151C216196DE27700548316 /* HelloObjectiveC */,
+				F151C213196DE27700548316 /* Frameworks */,
+				F151C212196DE27700548316 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F151C212196DE27700548316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F151C211196DE27700548316 /* HelloObjectiveC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F151C213196DE27700548316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F151C214196DE27700548316 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F151C216196DE27700548316 /* HelloObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				F151C217196DE27700548316 /* main.m */,
+				F151C222196E02FA00548316 /* Car.h */,
+				F151C223196E02FA00548316 /* Car.m */,
+				F151C21B196DE27700548316 /* HelloObjectiveC.1 */,
+				F151C219196DE27700548316 /* Supporting Files */,
+			);
+			path = HelloObjectiveC;
+			sourceTree = "<group>";
+		};
+		F151C219196DE27700548316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F151C21A196DE27700548316 /* HelloObjectiveC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F151C210196DE27700548316 /* HelloObjectiveC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F151C21F196DE27700548316 /* Build configuration list for PBXNativeTarget "HelloObjectiveC" */;
+			buildPhases = (
+				F151C20D196DE27700548316 /* Sources */,
+				F151C20E196DE27700548316 /* Frameworks */,
+				F151C20F196DE27700548316 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloObjectiveC;
+			productName = HelloObjectiveC;
+			productReference = F151C211196DE27700548316 /* HelloObjectiveC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F151C209196DE27700548316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+			};
+			buildConfigurationList = F151C20C196DE27700548316 /* Build configuration list for PBXProject "HelloObjectiveC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F151C208196DE27700548316;
+			productRefGroup = F151C212196DE27700548316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F151C210196DE27700548316 /* HelloObjectiveC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F151C20D196DE27700548316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F151C224196E02FA00548316 /* Car.m in Sources */,
+				F151C218196DE27700548316 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F151C21D196DE27700548316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F151C21E196DE27700548316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F151C220196DE27700548316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloObjectiveC/HelloObjectiveC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F151C221196DE27700548316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HelloObjectiveC/HelloObjectiveC-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F151C20C196DE27700548316 /* Build configuration list for PBXProject "HelloObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F151C21D196DE27700548316 /* Debug */,
+				F151C21E196DE27700548316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F151C21F196DE27700548316 /* Build configuration list for PBXNativeTarget "HelloObjectiveC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F151C220196DE27700548316 /* Debug */,
+				F151C221196DE27700548316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F151C209196DE27700548316 /* Project object */;
+}
