@@ -9,11 +9,20 @@
 #import "MFLTableViewController.h"
 
 
-
-
 @interface MFLTableViewController ()
 
-@property (nonatomic) NSArray * listItems;
+@property (nonatomic) NSArray * info;
+
+
+// create an array for students - NSStrings
+
+// create an array for colors -UIColors
+
+// create an array for sizes - NUNumbers
+
+// add last three days, set 7 students names in students array, set 7 UICOLORS, set 7 numbers
+
+//
 
 
 
@@ -27,16 +36,33 @@
     if (self) {
         // Custom initialization
      
-    //    self.listItems = [[NSArray alloc]initWithObjects:@"Monduy",@"Tuesday",@"Wednesday",@"Thursday", nil];
+    // dictionary info//
         
-      //  self.listItems = [NSArray arrayWithObjects:@"Monday",@"Tuesday",@"Wednesday",@"Thursday", nil];
-     
-     // TIY bottom is same as above. The literal is being converted into an alloc and init
-        
-        self.listItems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"];
-        
-    }
-        
+        self.info = @[
+                      @{
+                          @"day":@"Monday",
+                          @"student":@"Mary Jay",
+                          @"color":[UIColor redColor]
+                          @"font":@32
+                          },
+                      @{
+                         @"day":@"Tuesday",
+                         @"student":@"Ludacris",
+                         @"color":[UIColor greenColor]
+                         @"font":@27
+                         },
+                      @{
+                         @"day":@"Wednesday",
+                         @"student":@"Lil Wayne",
+                         @"color":[UIColor orangeColor]
+                         @"font":@32
+                         },
+                      @{
+                          
+                          @"day":@"Monday",
+                      @"student":@"Mary Beth",
+                      @"color":[UIColor redColor]
+                      @"font":@32
 return self;
 
 }
@@ -69,25 +95,55 @@ return self;
 {
     // Return the number of rows in the section.
     return self.listItems.count;
+    
 }
+
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [[UITableViewCell alloc]init];
+    UITableViewCell * cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@""];
+    
+    
     
     // NSString * listItems = [self.listItems objectAtIndex:indexPath.row];
-   
-   
+
     
     NSString * listItems = self.listItems[indexPath.row];
     
     NSLog(@"listItems = %@", listItems);
     
-    cell.textLabel.text = listItems;
-
-    cell.backgroundColor = [UIColor greenColor];
+    NSString * colorItems = self.colorItems[indexPath.row];
     
+    NSLog(@"colorItems = %@", colorItems);
+    
+    cell.textLabel.text = listItems;
+    
+    NSString * studentItems =self.studentItems[indexPath.row];
+    
+    cell.detailTextLabel.text = studentItems;
+    
+    // Colors//
+    
+    UIColor * color = self.colorItems[indexPath.row];
+    
+    cell.backgroundColor = color;
+    
+    // Number //
+    
+    NSNumber * number = self.numberItems[indexPath.row];
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:[number intValue]];
+                
+    
+    
+    
+    // there is a sub text that will be set by student name above is a hint
+    
+    // set background color in color in array
+    
+    
+    // set text label font size to a number for last array
     // Configure the cell...
     
     return cell;

@@ -4,7 +4,6 @@
 //
 //  Created by SYBIL TRUTH on 7/22/14.
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
-//
 
 #import "MFCRootViewController.h"
 
