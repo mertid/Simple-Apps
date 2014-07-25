@@ -19,7 +19,17 @@
     
     // Override point for customization after application launch.
 
-    self.window.rootViewController = [[GFATableViewController alloc] initWithStyle: UITableViewStylePlain];
+    // TIY init with root view controller is new!!!//
+    
+    
+    UINavigationController * nC = [[UINavigationController alloc]initWithRootViewController:[[GFATableViewController alloc] initWithStyle: UITableViewStylePlain]];
+    
+    self.window.rootViewController = nC;
+    
+    
+//    self.window.rootViewController = [[GFATableViewController alloc] initWithStyle: UITableViewStylePlain];
+    
+// TIY the above code is a break down of self.window.rootviewController
     
     
     self.window.backgroundColor = [UIColor whiteColor];

@@ -12,6 +12,7 @@
 
 #import "GFATableViewController.h"
 #import "GFATableViewCell.h"
+#import "GFAViewController.h"
 
 @interface GFATableViewController ()
 
@@ -41,6 +42,7 @@
                                    
                                         @"login": @"mertid",
                                         @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
+                                        @"html_url": @"http://github.com/mertid",
                                         @"name": @"Merritt Tidwell",
                                         @"following": @"0",
                                         @"location": @"Atlanta, GA",
@@ -296,6 +298,32 @@
     
     return cell;
 }
+
+// TIY this is selecting each cell and when selected "
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+NSLog(@"Select row at %@",indexPath);
+
+    GFAViewController * profileView = [[GFAViewController alloc]init];
+    
+//    TIY this is important to know to do if you are adding pushviewcolor
+    
+    
+//  TIY this is how you push a view into the next controller
+    
+    
+    profileView.view.backgroundColor = [ UIColor lightGrayColor];
+    
+    profileView.friendInfo = githubFriends[indexPath.row];
+    
+    
+    [self.navigationController pushViewController: profileView animated: YES];
+
+
+
+}
+
 
 /*
  // Override to support conditional editing of the table view
