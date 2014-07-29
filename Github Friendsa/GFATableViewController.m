@@ -13,21 +13,16 @@
 #import "GFATableViewController.h"
 #import "GFATableViewCell.h"
 #import "GFAViewController.h"
-
+#import "GRAGithubRequest.h"
 @interface GFATableViewController ()
 
 @end
 
 @implementation GFATableViewController
-
 {
     UITextField * searchLabel;
-
+    NSMutableArray * manualGitHubFriendInfo;
 }
-
-
-    NSMutableArray * githubFriends;
-    
 
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -36,198 +31,101 @@
     if (self) {
         // Custom initialization
         
-        githubFriends =         [@[
-      
-                                       @{
-                                   
-                                        @"login": @"mertid",
-                                        @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                        @"html_url": @"http://github.com/mertid",
-                                        @"name": @"Merritt Tidwell",
-                                        @"following": @"0",
-                                        @"location": @"Atlanta, GA",
-                                        @"followers": @"0",
-                                        },
-                                       
-                                      @{
-                                       
-                                       @"login": @"ssniteman",
-                                       @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                       @"name": @"Merritt Tidwell",
-                                       @"blog": @"merritt.com",
-                                       @"location": @"Dallas,TX",
-                                       @"email": @"Merritt.tidwell@gmail.com",
-                                       },
-                                       
-                                     
-                                       @{
-                                           @"login": @"npeterson213",
-                                           @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                           @"name": @"Merritt Tidwell",
-                                           @"blog": @"merritt.com",
-                                           @"location": @"Atlanta, GA",
-                                           @"email": @"Merritt.tidwell@gmail.com",
-
-                                           },
-                                      @{
-                                           
-                                        @"login": @"schwaebek",
-                                        @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                        @"name": @"Merritt Tidwell",
-                                        @"blog": @"merritt.com",
-                                        @"location": @"Atlanta, GA",
-                                        @"email": @"Merritt.tidwell@gmail.com",
-                                          
-                                          },
-                                       
-                                       @{ @"login": @"anterio",
-                                          @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                          @"name": @"Merritt Tidwell",
-                                          @"blog": @"merritt.com",
-                                          @"location": @"Atlanta, GA",
-                                          @"email": @"Merritt.tidwell@gmail.com",
-                                          },
-                                       
-                                       @{
-                                      
-                                           @"login": @"josephlausf",
-                                           @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                           @"name": @"Merritt Tidwell",
-                                           @"blog": @"merritt.com",
-                                           @"location": @"Atlanta, GA",
-                                           @"email": @"Merritt.tidwell@gmail.com",
-                                       },
-
-                                       @{
-                                         @"login": @"Kalson",
-                                          @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                          @"name": @"Merritt Tidwell",
-                                          @"blog": @"merritt.com",
-                                          @"location": @"Atlanta, GA",
-                                          @"email": @"Merritt.tidwell@gmail.com",
-                                       },
-                                      
-                                      @{
-                                        @"login": @"Jeremycbutler",
-                                        @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                        @"name": @"Merritt Tidwell",
-                                        @"blog": @"merritt.com",
-                                        @"location": @"Atlanta, GA",
-                                        @"email": @"Merritt.tidwell@gmail.com",
-                                        },
-                                
-                                       
-                                       @{
-                                           
-                                        @"login": @"renecandelier",
-                                        @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                        @"name": @"Merritt Tidwell",
-                                        @"blog": @"merritt.com",
-                                        @"location": @"Atlanta, GA",
-                                        @"email": @"Merritt.tidwell@gmail.com",
-
-                                        },
-                                      @{
-                                       @"login": @"ericstephen",
-                                       @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                       @"name": @"Merritt Tidwell",
-                                       @"blog": @"merritt.com",
-                                       @"location": @"Atlanta, GA",
-                                       @"email": @"Merritt.tidwell@gmail.com",
-                                       },
-                                       
-                                      @{
-                                           @"login": @"schwaebek",
-                                           @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                           @"name": @"Merritt Tidwell",
-                                           @"blog": @"merritt.com",
-                                           @"location": @"Atlanta, GA",
-                                           @"email": @"Merritt.tidwell@gmail.com",
-                                           },
-                                       
-                                        @{
-                                          @"login": @"EWJSeidel",
-                                          @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                          @"name": @"Merritt Tidwell",
-                                          @"blog": @"merritt.com",
-                                          @"location": @"Atlanta, GA",
-                                          @"email": @"Merritt.tidwell@gmail.com",
-
-                                           },
-                                    
-                                       @{
-                                       @"login": @"jhend11",
-                                       @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                       @"name": @"Merritt Tidwell",
-                                       @"blog": @"merritt.com",
-                                       @"location": @"Atlanta, GA",
-                                       @"email": @"Merritt.tidwell@gmail.com",
-
-                                       },
-                                       @{
-                                          @"login": @"ssneller",
-                                          @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                          @"name": @"Merritt Tidwell",
-                                          @"blog": @"merritt.com",
-                                          @"location": @"Atlanta, GA",
-                                          @"email": @"Merritt.tidwell@gmail.com",
-
-                                          },
-                                         @{
-                                           
-                                           @"login": @"dmerrill88",
-                                          @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                          @"name": @"Merritt Tidwell",
-                                          @"blog": @"merritt.com",
-                                          @"location": @"Atlanta, GA",
-                                          @"email": @"Merritt.tidwell@gmail.com",
-                                           },
-
-                                            @{
-                                             @"login": @"jaimeconnor",
-                                             @"avatar_url": @"https://avatars.githubusercontent.com/u/7989843?",
-                                             @"name": @"Merritt Tidwell",
-                                             @"blog": @"merritt.com",
-                                             @"location": @"Atlanta, GA",
-                                             @"email": @"Merritt.tidwell@gmail.com",
-
-                                           },
-                                       
-            ]mutableCopy];
+        
+        /*
+         
+         @"" -> String
+         @[] -> Array
+         @{} -> Dictionary
+         
+         @[@1, @2, @3 ]    OR @[@"Heidi", @"Merritt"]
+         
+         
+         //Dictionaries have keys that point to values
+         @{ @"name" :   @"Merritt", @"age" : @28}
+         
+         */
+        
+        manualGitHubFriendInfo = [@[]mutableCopy];
+        
+        NSArray * loadedUsers = [GRAGithubRequest loadUsers];
+        if (loadedUsers)
+        
+        {
+            manualGitHubFriendInfo = [loadedUsers mutableCopy];
+        }
     
+            //this is the code to allow formating
+        self.tableView.rowHeight = 90;
+        self.tableView.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     }
     
     return self;
-
-
+    
+    
 }
 
 
 - (void)viewDidLoad
+
+
+
+
 {
-    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    
+    
+   UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    
+    
+self.tableView.tableHeaderView = headerView;
+    
+    headerView.backgroundColor = [UIColor colorWithRed:0.965f green:0.125f blue:0.341f alpha:1.0f];
+    
+    headerView.layer.masksToBounds = NO;
+    
+    headerView.clipsToBounds = YES;
+    
+    
+    UIButton * searchButton=[[UIButton  alloc] initWithFrame:CGRectMake(273, 13, 35, 35)];
+    
+    searchButton.layer.cornerRadius = 35/2;
+    
+    searchButton.backgroundColor = [UIColor whiteColor];
+   
+    
+    
+    
+    
+    UIImage * buttonImage = [UIImage imageNamed:@"searchButton.png"];
+    
+    
+    
+    [searchButton setImage: buttonImage forState:UIControlStateNormal] ;
+    
+    
+    searchLabel = [[UITextField alloc]initWithFrame:CGRectMake(8, 13, 258, 35)];
+    
+    searchLabel.layer.cornerRadius = 8;
+    
+    searchLabel.backgroundColor = [UIColor whiteColor];
+    
+    searchLabel.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    
+    searchLabel.autocorrectionType = UITextAutocorrectionTypeNo;
+    
+    UIView * paddingView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 10, 20)];
+    
+    searchLabel.leftView = paddingView;
+    
+    searchLabel.leftViewMode = UITextFieldViewModeAlways;
+    
+    [headerView addSubview: searchLabel];
+    
+    
+    // this creates action on the button and then you have to create a method below//
+    
+    [searchButton addTarget:self action:@selector(addUser)forControlEvents:UIControlEventTouchUpInside];
 
-    
-    self.tableView.tableHeaderView = headerView;
-    
-    UIButton * searchButton=[[UIButton  alloc] initWithFrame:CGRectMake(270, 30, 40, 40)];
-    
-    searchButton.layer.cornerRadius = 20;
-    
-    searchButton.backgroundColor = [UIColor lightGrayColor];
-    
-    [searchButton setTitle:@"" forState:UIControlStateNormal] ;
-    
-    searchLabel = [[UITextField alloc]initWithFrame:CGRectMake(15, 30, 245, 45)];
-    
-    [self.view addSubview: searchLabel];
-    
-    searchLabel.borderStyle = UITextBorderStyleLine;
-
-    
-    
- //   [searchButton addTarget:self action:@selector(searchButtonClicked)forControlEvents:UIControlEventTouchUpInside];
-    
     [headerView addSubview:searchButton];
     CGRect sepFrame = CGRectMake(0, headerView.frame.size.height-1, 320, 1);
     UIView * seperatorView = [[UIView alloc] initWithFrame:sepFrame];
@@ -241,13 +139,25 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
+-(void)addUser
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    NSDictionary * userInfo = [GRAGithubRequest requestUserInfo:(NSString*) searchLabel.text];
+    
+    NSLog(@"search button was clicked");
+
+        // add new users to the top of the list//
+    
+    [manualGitHubFriendInfo insertObject:userInfo atIndex:0];
+    
+    [self.tableView reloadData];
+    
+    [GRAGithubRequest saveUsers:manualGitHubFriendInfo];
+   
+    [searchLabel resignFirstResponder];
 }
 
 #pragma mark - Table view data source
@@ -264,8 +174,8 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 
 {
-
-    return 115;
+    
+    return 90;
     
 }
 
@@ -273,7 +183,7 @@
 {
     
     // Return the number of rows in the section.
-    return githubFriends.count;
+    return manualGitHubFriendInfo.count;
 }
 
 // TIY we do this when we need to "cache an item so that it can be essentially "resued"
@@ -288,64 +198,70 @@
         
     }
     
-    cell.friendInfo = githubFriends[indexPath.row];
+    cell.friendInfo = manualGitHubFriendInfo[indexPath.row];
     
+    cell.navigationController= self.navigationController;
+   
     
     // Configure the cell...
     
     
     
-    
     return cell;
 }
-
-// TIY this is selecting each cell and when selected "
+// TIY this is selecting each cell and when selected
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-NSLog(@"Select row at %@",indexPath);
-
+    NSLog(@"Select row at %@",indexPath);
+    
     GFAViewController * profileView = [[GFAViewController alloc]init];
     
-//    TIY this is important to know to do if you are adding pushviewcolor
+    //    TIY this is important to know to do if you are adding pushviewcolor
     
     
-//  TIY this is how you push a view into the next controller
+    //  TIY this is how you push a view into the next controller
     
     
     profileView.view.backgroundColor = [ UIColor lightGrayColor];
     
-    profileView.friendInfo = githubFriends[indexPath.row];
+    profileView.friendInfo = manualGitHubFriendInfo[indexPath.row];
     
     
     [self.navigationController pushViewController: profileView animated: YES];
-
-
-
+    
+    
+    
 }
 
 
-/*
+
  // Override to support conditional editing of the table view
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
  {
  // Return NO if you do not want the specified item to be editable.
  return YES;
  }
- */
 
-/*
+
+
  // Override to support editing the table view.
  - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
  {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
+ if (editingStyle == UITableViewCellEditingStyleDelete)
+ 
+ {  [manualGitHubFriendInfo removeObjectAtIndex:indexPath.row];
+    
+     [GRAGithubRequest saveUsers:manualGitHubFriendInfo];
+     
+     
  // Delete the row from the data source
  [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
  } else if (editingStyle == UITableViewCellEditingStyleInsert) {
  // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
  }
  }
- */
+ 
 
 /*
  // Override to support rearranging the table view.

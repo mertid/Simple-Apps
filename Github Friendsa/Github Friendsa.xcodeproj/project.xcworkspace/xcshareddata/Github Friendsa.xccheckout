@@ -19,6 +19,8 @@
 	<dict>
 		<key>20E93DCF-315F-45C7-AB97-6B75C253F111</key>
 		<string>../../..</string>
+		<key>97C00722-0EE7-40D1-8D0F-F8BBE04D7BD5</key>
+		<string>../../../../Desktop/Github Request</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mertid/Simple-Apps.git</string>
@@ -28,6 +30,14 @@
 	<string>20E93DCF-315F-45C7-AB97-6B75C253F111</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>97C00722-0EE7-40D1-8D0F-F8BBE04D7BD5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Github Request</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

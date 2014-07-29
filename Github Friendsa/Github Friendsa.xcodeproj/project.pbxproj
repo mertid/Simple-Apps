@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2213400D1986A0DD001743B0 /* GRAGithubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2213400C1986A0DD001743B0 /* GRAGithubRequest.m */; };
 		2269A3571982A7F9000D06E6 /* GFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2269A3561982A7F9000D06E6 /* GFAViewController.m */; };
+		2269A35E1982D2F9000D06E6 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2269A35A1982D2F9000D06E6 /* downArrow.png */; };
+		2269A35F1982D2F9000D06E6 /* profileArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2269A35B1982D2F9000D06E6 /* profileArrow.png */; };
+		2269A3601982D2F9000D06E6 /* searchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 2269A35C1982D2F9000D06E6 /* searchButton.png */; };
+		2269A3611982D2F9000D06E6 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2269A35D1982D2F9000D06E6 /* upArrow.png */; };
 		F152E65C19813F0400E649B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F152E65B19813F0400E649B9 /* Foundation.framework */; };
 		F152E65E19813F0400E649B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F152E65D19813F0400E649B9 /* CoreGraphics.framework */; };
 		F152E66019813F0400E649B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F152E65F19813F0400E649B9 /* UIKit.framework */; };
@@ -35,8 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2213400B1986A0DD001743B0 /* GRAGithubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAGithubRequest.h; sourceTree = "<group>"; };
+		2213400C1986A0DD001743B0 /* GRAGithubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAGithubRequest.m; sourceTree = "<group>"; };
 		2269A3551982A7F9000D06E6 /* GFAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GFAViewController.h; path = "Github Friendsa/GFAViewController.h"; sourceTree = "<group>"; };
 		2269A3561982A7F9000D06E6 /* GFAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GFAViewController.m; path = "Github Friendsa/GFAViewController.m"; sourceTree = "<group>"; };
+		2269A35A1982D2F9000D06E6 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = downArrow.png; path = ../../Downloads/githubFriends/downArrow.png; sourceTree = "<group>"; };
+		2269A35B1982D2F9000D06E6 /* profileArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profileArrow.png; path = ../../Downloads/githubFriends/profileArrow.png; sourceTree = "<group>"; };
+		2269A35C1982D2F9000D06E6 /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = searchButton.png; path = ../../Downloads/githubFriends/searchButton.png; sourceTree = "<group>"; };
+		2269A35D1982D2F9000D06E6 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = upArrow.png; path = ../../Downloads/githubFriends/upArrow.png; sourceTree = "<group>"; };
 		F152E65819813F0400E649B9 /* Github Friendsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Friendsa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F152E65B19813F0400E649B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F152E65D19813F0400E649B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,9 +94,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2269A3581982D2CA000D06E6 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				2269A3591982D2D8000D06E6 /* images */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		2269A3591982D2D8000D06E6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				2269A35A1982D2F9000D06E6 /* downArrow.png */,
+				2269A35B1982D2F9000D06E6 /* profileArrow.png */,
+				2269A35C1982D2F9000D06E6 /* searchButton.png */,
+				2269A35D1982D2F9000D06E6 /* upArrow.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		F152E64F19813F0400E649B9 = {
 			isa = PBXGroup;
 			children = (
+				2269A3581982D2CA000D06E6 /* resources */,
 				F152E68A19813F8300E649B9 /* Controllers */,
 				F152E66119813F0400E649B9 /* Github Friendsa */,
 				F152E67A19813F0500E649B9 /* Github FriendsaTests */,
@@ -157,6 +188,8 @@
 		F152E68A19813F8300E649B9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2213400B1986A0DD001743B0 /* GRAGithubRequest.h */,
+				2213400C1986A0DD001743B0 /* GRAGithubRequest.m */,
 				F152E68B19813F9800E649B9 /* GFATableViewController.h */,
 				F152E68C19813F9800E649B9 /* GFATableViewController.m */,
 				F152E68E1981481D00E649B9 /* GFATableViewCell.h */,
@@ -243,8 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2269A35E1982D2F9000D06E6 /* downArrow.png in Resources */,
 				F152E66619813F0400E649B9 /* InfoPlist.strings in Resources */,
 				F152E66E19813F0400E649B9 /* Images.xcassets in Resources */,
+				2269A35F1982D2F9000D06E6 /* profileArrow.png in Resources */,
+				2269A3611982D2F9000D06E6 /* upArrow.png in Resources */,
+				2269A3601982D2F9000D06E6 /* searchButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +305,7 @@
 				F152E66819813F0400E649B9 /* main.m in Sources */,
 				F152E6901981481D00E649B9 /* GFATableViewCell.m in Sources */,
 				F152E66C19813F0400E649B9 /* GFAAppDelegate.m in Sources */,
+				2213400D1986A0DD001743B0 /* GRAGithubRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
