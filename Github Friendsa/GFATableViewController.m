@@ -29,8 +29,9 @@
 {
     self = [super initWithStyle:style];
     if (self) {
+
+        NSLog(@"im in the init with style bitch");
         // Custom initialization
-        
         
         /*
          
@@ -67,15 +68,11 @@
 
 
 - (void)viewDidLoad
-
-
-
-
 {
     
-    
    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+
     
 self.tableView.tableHeaderView = headerView;
     

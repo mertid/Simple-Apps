@@ -22,10 +22,11 @@
     // TIY init with root view controller is new!!!//
     
     
-    UINavigationController * nC = [[UINavigationController alloc]initWithRootViewController:[[GFATableViewController alloc] initWithStyle: UITableViewStylePlain]];
+    GFATableViewController * tC = [[GFATableViewController alloc] initWithStyle: UITableViewStylePlain];
+    
+    UINavigationController * nC = [[UINavigationController alloc]initWithRootViewController:tC];
     
     self.window.rootViewController = nC;
-    
     
 //    self.window.rootViewController = [[GFATableViewController alloc] initWithStyle: UITableViewStylePlain];
     
